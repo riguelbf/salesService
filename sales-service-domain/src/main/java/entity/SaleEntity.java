@@ -10,8 +10,10 @@ public class SaleEntity extends EntityBase {
 
 	private String salesmanName;
 
-	protected SaleEntity(){
-		
+	protected SaleEntity(String id, String salesmanName, List<ItemEntity> items){
+		setId(id);
+		setSalesmanName(salesmanName);
+		setItems(items);
 	}
 	
 	public List<ItemEntity> getItems() {

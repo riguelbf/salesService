@@ -8,8 +8,10 @@ public class ItemEntity extends EntityBase {
 	
 	private Long price;
 
-	protected ItemEntity(){
-		
+	protected ItemEntity(String id, Integer quantity, Long price){
+		setId(id);
+		setQuantity(quantity);
+		setPrice(price);
 	}
 	
 	public Integer getQuantity() {
