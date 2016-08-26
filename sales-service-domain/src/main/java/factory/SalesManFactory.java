@@ -3,7 +3,7 @@ package factory;
 import entity.SalesManEntity;
 import specification.NotNullSpecification;
 
-public class SalesManFactory extends SalesManEntity implements FactoryBase {
+public class SalesManFactory extends SalesManEntity implements FactoryBase<SalesManEntity> {
 
 	private static final long serialVersionUID = -49185649151148014L;
 

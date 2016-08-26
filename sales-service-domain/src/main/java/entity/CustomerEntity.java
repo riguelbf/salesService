@@ -5,15 +5,18 @@ public class CustomerEntity extends EntityBase {
 	private static final long serialVersionUID = 7353027227709738418L;
 
 	private String cnpj;
-	
+
 	private String name;
-	
+
 	private String businessArea;
 
-	protected CustomerEntity() {
-		
+	protected CustomerEntity(String id, String cnpj, String name, String businessArea) {
+		setId(id);
+		setBusinessArea(businessArea);
+		setCnpj(cnpj);
+		setName(name);
 	}
-	
+
 	public String getCnpj() {
 		return cnpj;
 	}
@@ -74,7 +77,5 @@ public class CustomerEntity extends EntityBase {
 			return false;
 		return true;
 	}
-	
-	
-	
+
 }
