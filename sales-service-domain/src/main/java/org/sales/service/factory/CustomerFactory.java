@@ -1,7 +1,7 @@
-package factory;
+package org.sales.service.factory;
 
-import entity.CustomerEntity;
-import specification.NotNullSpecification;
+import org.sales.service.entity.CustomerEntity;
+import org.sales.service.specification.NotNullSpecification;
 
 public class CustomerFactory extends CustomerEntity implements FactoryBase<CustomerEntity> {
 

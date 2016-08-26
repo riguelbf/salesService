@@ -1,6 +1,6 @@
-package specification;
+package org.sales.service.specification;
 
-import constant.MessageError;
+import org.sales.service.constant.MessageError;
 
 public class NotNullSpecification extends RuntimeException implements SpecificationBase {
 

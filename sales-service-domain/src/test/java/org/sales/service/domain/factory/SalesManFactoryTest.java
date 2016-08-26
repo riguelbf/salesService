@@ -1,11 +1,10 @@
-package domain.factory;
+package org.sales.service.domain.factory;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import constant.MessageError;
-import entity.SalesManEntity;
-import factory.SalesManFactory;
+import org.sales.service.constant.MessageError;
+import org.sales.service.entity.SalesManEntity;
+import org.sales.service.factory.SalesManFactory;
 
 public class SalesManFactoryTest {
 

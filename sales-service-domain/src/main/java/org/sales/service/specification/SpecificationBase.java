@@ -1,4 +1,4 @@
-package specification;
+package org.sales.service.specification;
 
 import java.io.Serializable;
 

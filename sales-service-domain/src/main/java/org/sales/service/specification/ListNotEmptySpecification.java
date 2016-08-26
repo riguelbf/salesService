@@ -1,8 +1,8 @@
-package specification;
+package org.sales.service.specification;
 
 import java.util.List;
 
-import constant.MessageError;
+import org.sales.service.constant.MessageError;
 
 public class ListNotEmptySpecification extends RuntimeException implements SpecificationBase {
 

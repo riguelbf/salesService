@@ -1,6 +1,6 @@
-package factory;
+package org.sales.service.factory;
 
-import entity.EntityBase;
+import org.sales.service.entity.EntityBase;
 
 public interface FactoryBase<T extends EntityBase> {
 

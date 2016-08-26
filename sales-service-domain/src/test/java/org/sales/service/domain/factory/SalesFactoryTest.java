@@ -1,15 +1,14 @@
-package domain.factory;
+package org.sales.service.domain.factory;
 
 import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import constant.MessageError;
-import domain.dataprovider.ItemDataProvider;
-import entity.ItemEntity;
-import entity.SaleEntity;
-import factory.SaleFactory;
+import org.sales.service.constant.MessageError;
+import org.sales.service.domain.dataprovider.ItemDataProvider;
+import org.sales.service.entity.ItemEntity;
+import org.sales.service.entity.SaleEntity;
+import org.sales.service.factory.SaleFactory;
 
 public class SalesFactoryTest {
 

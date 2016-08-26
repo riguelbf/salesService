@@ -1,4 +1,4 @@
-package entity;
+package org.sales.service.entity;
 
 public class SalesManEntity extends EntityBase {
 

@@ -1,6 +1,6 @@
-package factory;
+package org.sales.service.factory;
 
-import entity.ItemEntity;
+import org.sales.service.entity.ItemEntity;
 
 public class ItemFactory extends ItemEntity implements FactoryBase<ItemEntity> {
 

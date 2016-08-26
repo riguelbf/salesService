@@ -1,11 +1,11 @@
-package factory;
+package org.sales.service.factory;
 
 import java.util.List;
 
-import entity.ItemEntity;
-import entity.SaleEntity;
-import specification.ListNotEmptySpecification;
-import specification.NotNullSpecification;
+import org.sales.service.entity.ItemEntity;
+import org.sales.service.entity.SaleEntity;
+import org.sales.service.specification.ListNotEmptySpecification;
+import org.sales.service.specification.NotNullSpecification;
 
 public class SaleFactory extends SaleEntity implements FactoryBase<SaleEntity> {
 

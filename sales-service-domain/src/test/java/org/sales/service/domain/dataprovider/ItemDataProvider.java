@@ -1,10 +1,10 @@
-package domain.dataprovider;
+package org.sales.service.domain.dataprovider;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import entity.ItemEntity;
-import factory.ItemFactory;
+import org.sales.service.entity.ItemEntity;
+import org.sales.service.factory.ItemFactory;
 
 public class ItemDataProvider implements DataProviderBase<ItemEntity> {
 

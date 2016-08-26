@@ -1,8 +1,8 @@
-package domain.dataprovider;
+package org.sales.service.domain.dataprovider;
 
 import java.util.List;
 
-import entity.EntityBase;
+import org.sales.service.entity.EntityBase;
 
 public interface DataProviderBase<T extends EntityBase> {
 

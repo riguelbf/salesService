@@ -1,4 +1,4 @@
-package constant;
+package org.sales.service.constant;
 
 public class MessageError {
 	
