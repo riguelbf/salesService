@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Path;
+<<<<<<< HEAD
+=======
+import java.nio.file.Paths;
+>>>>>>> 45cc222c2bbd91eb913694cdca5a695e13947c4b
 import java.nio.file.WatchEvent;
 import java.nio.file.WatchEvent.Kind;
 import java.nio.file.WatchKey;
@@ -72,4 +76,14 @@ public class WatcheFolder {
 		}
 		
 	}
+<<<<<<< HEAD
+=======
+
+	public static void main(String[] args) throws IOException,
+			InterruptedException {
+		// Folder we are going to watch
+		Path folder = Paths.get(System.getProperty("user.home"));
+		watchDirectoryPath(folder);
+	}
+>>>>>>> 45cc222c2bbd91eb913694cdca5a695e13947c4b
 }
