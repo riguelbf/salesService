@@ -1,42 +1,39 @@
 package factory;
 
 import entity.SalesManEntity;
+import specification.NotNullSpecification;
 
 public class SalesManFactory extends SalesManEntity implements FactoryBase {
 
 	private static final long serialVersionUID = -49185649151148014L;
 
-	protected SalesManFactory(String id, Integer cpf, Long salary) {
+	public SalesManFactory(String id, Integer cpf, Long salary) {
 		super(id, cpf, salary);
 	}
 
-	public SalesManEntity build(String id, Integer cpf, Long salary) {
+	public SalesManEntity build() throws Exception {
 		validateProperties();
-
 		return (SalesManEntity) this;
 	}
 
 	@Override
-	public void validateProperties() {
+	public void validateProperties() throws Exception {
 		validateId(getId());
 		validateCpf(getCpf());
 		validateSalary(getSalary());
+	}
+
+	private void validateSalary(Long salary) throws Exception {
+		new NotNullSpecification().isSatisfy(salary);
+	}
+
+	private void validateCpf(Integer cpf) throws Exception {
+		new NotNullSpecification().isSatisfy(cpf);
 
 	}
 
-	private void validateSalary(Long salary) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void validateCpf(Integer cpf) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private void validateId(String id) {
-		// TODO Auto-generated method stub
-		
+	private void validateId(String id) throws Exception {
+		new NotNullSpecification().isSatisfy(id);
 	}
 
 }

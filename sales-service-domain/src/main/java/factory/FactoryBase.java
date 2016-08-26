@@ -2,5 +2,5 @@ package factory;
 
 public interface FactoryBase {
 
-	void validateProperties();
+	void validateProperties() throws Exception;
 }
